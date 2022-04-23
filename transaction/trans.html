@@ -1,4 +1,4 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="/transaction/trans.css" rel="stylesheet">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
@@ -10,19 +10,19 @@
         </div>
         <!-- panel preview -->
         <div class="col-sm-5">
-            <h4>Add payment:</h4>
+            <h4>New transaction:</h4>
             <div class="panel panel-default">
                 <div class="panel-body form-horizontal payment-form">
                     <div class="form-group">
-                        <label for="concept" class="col-sm-3 control-label">Cuenta</label>
+                        <label for="concept" class="col-sm-3 control-label">Account</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" id="concept" name="concept">
+                            <input type="text" class="form-control" id="account" name="account">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="concept" class="col-sm-3 control-label">Destinatario</label>
+                        <label for="concept" class="col-sm-3 control-label">Destination Account</label>
                         <div class="col-sm-9">
-                            <input type="text" class="form-control" id="concept" name="concept">
+                            <input type="text" class="form-control" id="destinationAcc" name="destinationAcc">
                         </div>
                     </div>
                     <div class="form-group">
@@ -32,24 +32,9 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="description" class="col-sm-3 control-label">Description</label>
-                        <div class="col-sm-9">
-                            <input type="text" class="form-control" id="description" name="description">
-                        </div>
-                    </div>
-                    <div class="form-group">
                         <label for="amount" class="col-sm-3 control-label">Amount</label>
                         <div class="col-sm-9">
                             <input type="number" class="form-control" id="amount" name="amount">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label for="status" class="col-sm-3 control-label">Status</label>
-                        <div class="col-sm-9">
-                            <select class="form-control" id="status" name="status">
-                                <option>Paid</option>
-                                <option>Unpaid</option>
-                            </select>
                         </div>
                     </div>
                     <div class="form-group">
@@ -76,10 +61,9 @@
                         <table class="table preview-table">
                             <thead>
                                 <tr>
+                                    <th>Destination Account</th>
                                     <th>Concept</th>
-                                    <th>Description</th>
                                     <th>Amount</th>
-                                    <th>Status</th>
                                     <th>Date</th>
                                 </tr>
                             </thead>
@@ -95,8 +79,8 @@
             </div>
             <div class="row">
                 <div class="col-xs-12">
-                    <hr style="border:1px dashed #dddddd;">
-                    <button type="button" class="btn btn-primary btn-block">Submit all and finish</button>
+                    <hr style="border:1px dashed #ebe8e8;">
+                    <button type="button" class="btn btn-primary btn-block">Finish</button>
                 </div>
             </div>
         </div>

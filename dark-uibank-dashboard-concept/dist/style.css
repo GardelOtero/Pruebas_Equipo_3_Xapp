@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 :root {
   --c-gray-900: #000000;
   --c-gray-800: #1f1f1f;
@@ -10,19 +11,24 @@
   --c-gray-200: #f1f1f1;
   --c-gray-100: #ffffff;
   --c-green-500: #45ffbc;
-  --c-olive-500: #e3ffa8;
+  --c-olive-500: #e3ffa8; /*e3ffa8*/
   --c-white: var(--c-gray-100);
-  --c-text-primary: var(--c-gray-100);
-  --c-text-secondary: var(--c-gray-200);
+  --c-text-primary: var(--c-gray-900);
+  --c-text-secondary: var(--c-gray-700);
   --c-text-tertiary: var(--c-gray-500);
+  --xipe-acentos-rojos: #e74955;
+  --xipe-scrollbar: #ebe8e8;
+  --xipe-texto: #1c1b1b;
+  --xipe-fondo: #f2f0f0;
+  --xipe-sidebar: #707070;
 }
 
 body {
   line-height: 1.5;
   min-height: 100vh;
-  font-family: "Be Vietnam Pro", sans-serif;
-  background-color: var(--c-gray-900);
-  color: var(--c-text-primary);
+  font-family: "Poppins", sans-serif;
+  background-color: var(--xipe-acentos-rojos); /*900*/
+  color: var(--xipe-texto);
   display: flex;
   padding-top: 3vw;
   padding-bottom: 3vw;
@@ -60,10 +66,10 @@ a {
 
 .app {
   min-height: 80vh;
-  width: 95%;
+  width: 100%;
   max-width: 1600px;
-  background-color: var(--c-gray-800);
-  padding: 2vw 4vw 6vw;
+  background-color: var(--xipe-fondo); /*--c-gray-800*/
+  padding: 2vw 4vw 6vw ;
   display: flex;
   flex-direction: column;
 }
@@ -81,7 +87,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid var(--c-gray-600);
+    border-bottom: 1px solid var(--xipe-sidebar); /*600*/
   }
 }
 
@@ -103,7 +109,7 @@ a {
 
 .app-header-actions-buttons {
   display: flex;
-  border-left: 1px solid var(--c-gray-600);
+  border-left: 1px solid var(--xipe-sidebar); /*600*/
   margin-left: 2rem;
   padding-left: 2rem;
 }
@@ -122,7 +128,7 @@ a {
 
 .app-body {
   height: 100%;
-  display: grid;
+  display: flex;
   grid-template-columns: minmax(-webkit-min-content, 175px) minmax(-webkit-max-content, 1fr) minmax(-webkit-min-content, 400px);
   grid-template-columns: minmax(min-content, 175px) minmax(max-content, 1fr) minmax(min-content, 400px);
   -moz-column-gap: 4rem;
@@ -163,7 +169,7 @@ a {
   margin-left: 0.25em;
 }
 .footer div {
-  border-top: 1px solid var(--c-gray-600);
+  border-top: 1px solid var(--xipe-sidebar); /*600*/
   margin-top: 1.5rem;
   padding-top: 1rem;
   font-size: 0.75rem;
@@ -175,7 +181,7 @@ a {
   align-items: center;
   padding-bottom: 1rem;
   padding-top: 1rem;
-  border-bottom: 1px solid var(--c-gray-600);
+  border-bottom: 1px solid var(--xipe-sidebar); /*600*/
 }
 @media (max-width: 1200px) {
   .logo {
@@ -236,7 +242,7 @@ a {
   display: flex;
   justify-content: space-between;
   color: var(--c-text-tertiary);
-  border-bottom: 1px solid var(--c-gray-600);
+  border-bottom: 1px solid var(--c-gray-600); /*600*/
 }
 .tabs a {
   padding-top: 1rem;
@@ -332,8 +338,8 @@ a {
 .tile {
   padding: 1rem;
   border-radius: 8px;
-  background-color: var(--c-olive-500);
-  color: var(--c-gray-900);
+  background-color: var(--xipe-acentos-rojos);
+  color: var(--c-gray-900); /*900*/
   min-height: 200px;
   display: flex;
   flex-direction: column;
@@ -345,7 +351,7 @@ a {
   transform: translateY(-5px);
 }
 .tile:focus-within {
-  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-olive-500);
+  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--xipe-acentos-rojos);
 }
 .tile:nth-child(2) {
   background-color: var(--c-green-500);
@@ -483,7 +489,7 @@ a {
 
 .flat-button {
   border-radius: 6px;
-  background-color: var(--c-gray-700);
+  background-color: var(--c-gray-300);
   padding: 0.5em 1.5em;
   border: 0;
   color: var(--c-text-secondary);
@@ -512,7 +518,7 @@ a {
   align-items: center;
   width: 100%;
   padding-bottom: 0.75rem;
-  border-bottom: 1px solid var(--c-gray-600);
+  border-bottom: 1px solid var(--c-gray-600); /*600*/
 }
 .transfer-section-header h2 {
   font-size: 1.5rem;
@@ -538,7 +544,7 @@ a {
   aspect-ratio: 3/2;
   flex-shrink: 0;
   border-radius: 6px;
-  color: var(--c-gray-800);
+  color: var(--c-gray-800); /*800*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -546,13 +552,13 @@ a {
   font-weight: 600;
 }
 .card.green {
-  background-color: var(--c-green-500);
+  background-color: var(--c-green-500); /*500*/
 }
 .card.olive {
-  background-color: var(--c-olive-500);
+  background-color: var(--xipe-acentos-rojos); /*500*/
 }
 .card.gray {
-  background-color: var(--c-gray-300);
+  background-color: var(--c-gray-300); /*300*/
 }
 .card span:last-child {
   align-self: flex-end;
@@ -566,14 +572,14 @@ a {
 }
 .payment-details h3 {
   font-size: 1rem;
-  color: var(--c-text-tertiary);
+  color: var(--c-text-tertiary); /*terciary*/
 }
 .payment-details div {
   margin-top: 0.75rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border-top: 1px solid var(--c-gray-600);
-  border-bottom: 1px solid var(--c-gray-600);
+  border-top: 1px solid var(--c-gray-600); /*600*/
+  border-bottom: 1px solid var(--c-gray-600); /*600*/
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -586,13 +592,13 @@ a {
 .filter-options {
   margin-left: 1.25rem;
   padding-left: 1.25rem;
-  border-left: 1px solid var(--c-gray-600);
+  border-left: 1px solid var(--c-gray-600); /*600*/
   display: flex;
   align-items: center;
   flex: 1 1 auto;
 }
 .filter-options p {
-  color: var(--c-text-tertiary);
+  color: var(--c-text-tertiary); /*terciary*/
   font-size: 0.875rem;
 }
 .filter-options p + * {
@@ -628,7 +634,7 @@ a {
 }
 
 .transfer-logo {
-  background-color: var(--c-gray-200);
+  background-color: var(--c-gray-200); /*200*/
   border-radius: 4px;
   width: 42px;
   height: 42px;
@@ -672,7 +678,7 @@ a {
   }
 }
 .transfer-details dd {
-  color: var(--c-text-tertiary);
+  color: var(--c-text-tertiary); /*terciary*/
   margin-top: 2px;
 }
 
@@ -693,28 +699,28 @@ a {
   }
 }
 
-.payment-section > h2 {
+/*.payment-section > h2 {
   font-size: 1.5rem;
-}
+}*/
 
-.payment-section-header {
+/*.payment-section-header {
   display: flex;
   align-items: center;
   margin-top: 1rem;
-}
-.payment-section-header p {
+}*/
+/*.payment-section-header p {
   color: var(--c-text-tertiary);
   font-size: 0.875rem;
-}
-.payment-section-header div {
+}*/
+/*.payment-section-header div {
   padding-left: 1rem;
   margin-left: auto;
   display: flex;
   align-items: center;
-}
-.payment-section-header div > * + * {
+}*/
+/*.payment-section-header div > * + * {
   margin-left: 0.5rem;
-}
+}*/
 
 .card-button {
   display: flex;
@@ -726,17 +732,17 @@ a {
   background-color: transparent;
   transition: 0.25s ease;
   border-radius: 4px;
-  border: 2px solid var(--c-gray-600);
-  color: var(--c-text-primary);
+  border: 2px solid var(--c-gray-600); /*600*/
+  color: var(--c-text-primary); /*primary*/
   cursor: pointer;
 }
 .card-button.mastercard svg {
   max-height: 15px;
 }
 .card-button:focus, .card-button:hover, .card-button.active {
-  color: var(--c-gray-800);
-  background-color: var(--c-white);
-  border-color: var(--c-white);
+  color: var(--c-gray-800); /*800*/
+  background-color: var(--c-white); /*white*/
+  border-color: var(--c-white); /*white*/
 }
 
 .faq {
@@ -745,15 +751,15 @@ a {
   flex-direction: column;
 }
 .faq p {
-  color: var(--c-text-tertiary);
+  color: var(--c-text-tertiary); /*terciary*/
   font-size: 0.875rem;
 }
 .faq div {
   margin-top: 0.75rem;
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-  border-top: 1px solid var(--c-gray-600);
-  border-bottom: 1px solid var(--c-gray-600);
+  border-top: 1px solid var(--c-gray-600); /*600*/ 
+  border-bottom: 1px solid var(--c-gray-600); /*600*/
   font-size: 0.875rem;
   display: flex;
   align-items: center;
@@ -761,7 +767,7 @@ a {
 .faq div label {
   padding-right: 1rem;
   margin-right: 1rem;
-  border-right: 1px solid var(--c-gray-600);
+  border-right: 1px solid var(--c-gray-600); /*600*/
 }
 .faq div input {
   border: 0;
@@ -770,11 +776,11 @@ a {
   width: 100%;
 }
 
-.payment-section-footer {
+*/*.payment-section-footer {
   display: flex;
   align-items: center;
   margin-top: 1.5rem;
-}
+}*/
 
 .save-button {
   border: 1px solid currentColor;
@@ -786,7 +792,7 @@ a {
   cursor: pointer;
 }
 .save-button:focus, .save-button:hover {
-  color: var(--c-white);
+  color: var(--c-white); /*white*/
 }
 
 .settings-button {
@@ -804,7 +810,7 @@ a {
   margin-right: 0.5rem;
 }
 .settings-button:focus, .settings-button:hover {
-  color: var(--c-white);
+  color: var(--c-white); /*white*/
 }
 
 input:focus,
@@ -813,5 +819,5 @@ a:focus,
 textarea:focus,
 button:focus {
   outline: 0;
-  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300);
+  box-shadow: 0 0 0 2px var(--c-gray-800), 0 0 0 4px var(--c-gray-300); /*900*/ /*300*/
 }
