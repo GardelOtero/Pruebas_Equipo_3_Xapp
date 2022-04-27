@@ -5,7 +5,8 @@
   <title>XipeCoins Management</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="./style.css">
-  <link rel="stylesheet" href="./siderbar.css">
+  <link rel="stylesheet" href="./sidebar.css">
+  
 
 </head>
 <body>
@@ -33,20 +34,20 @@
 		</div>
 		<div class="app-header-navigation">
 			<div class="tabs">
-				<a href="#">
-					General
+				<a href="./index.html" class="active">
+					General_
 				</a>
-				<a href="#" class="active">
-					Transferencia
+				<a href="./transaction/trans.html" class="active">
+					_Transferencia_ 
 				</a>
 				<!--<a href="#">
 					Cards
 				</a>-->
 				<a href="#">
-					Cuenta
+					_Cuenta_  
 				</a>
 				<a href="#">
-					Configuración
+					_Configuración 
 				</a>
 				<!--<a href="#">
 					Business
@@ -54,6 +55,7 @@
 			</div>
 		</div>
 		<div class="app-header-actions">
+			<a href="#Perfil" class="active"></a>
 			<button class="user-profile">
 				<span>Jorge Jiménez</span>
 				<span>
@@ -70,9 +72,25 @@
 			</div>
 		</div>
 		<div class="app-header-mobile">
-			<button class="icon-button large">
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="./index.html">General</a></li>
+					<li><a href="./transaction/trans.html">Transferencia</a></li>
+					<li><a href="#Cuenta">Cuenta</a></li>
+					<!--<li class="divider"></li>-->
+					<li><a href="#Configuración">Configuración</a></li>
+				</ul>
+		<!--<button class="icon-button large">
 				<i class="ph-list"></i>
-			</button>
+				<ul class="dropdown-menu" role="menu">
+					<li><a href="#">Acción #1</a></li>
+					<li><a href="#">Acción #2</a></li>
+					<li><a href="#">Acción #3</a></li>
+					<li class="divider"></li>
+					<li><a href="#">Acción #4</a></li>
+				</ul>
+			</button>-->
+		
+			
 		</div>
 
 	</header>
@@ -154,14 +172,18 @@
 						</select>
 						<i class="ph-caret-down"></i>
 					</div>-->
+					<a href="./Convenios/index.html">
 					<button class="flat-button">
 						Search
 					</button>
+				</a>
 				</div>
 				<div class="mobile-only">
+					<a href="./Convenios/index.html">
 					<button class="flat-button">
 						Toggle search
 					</button>
+				</a>
 				</div>
 				<div class="tiles">
 					<article class="tile">
@@ -172,7 +194,7 @@
 								<span>Ver sucursales</span>
 							</h3>
 						</div>
-						<a href="#">
+						<a href="./Convenios/index.html">
 							<span>Ir a convenio</span>
 							<span class="icon-button">
 								<i class="ph-caret-right-bold"></i>
@@ -187,7 +209,7 @@
 								<span>Ver sucursales</span>
 							</h3>
 						</div>
-						<a href="#">
+						<a href="./Convenios/index.html">
 							<span>Ir a convenio</span>
 							<span class="icon-button">
 								<i class="ph-caret-right-bold"></i>
@@ -202,7 +224,7 @@
 								<span>Ver sucursales</span>
 							</h3>
 						</div>
-						<a href="#">
+						<a href="./Convenios/index.html">
 							<span>Ir a convenio</span>
 							<span class="icon-button">
 								<i class="ph-caret-right-bold"></i>
