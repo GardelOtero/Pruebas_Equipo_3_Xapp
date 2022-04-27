@@ -17,18 +17,20 @@
   --c-text-secondary: var(--c-gray-700);
   --c-text-tertiary: var(--c-gray-500);
   --c-text-cuartiary: var(--c-gray-200);
-  --xipe-acentos-rojos: #e74955;
+  --xipe-acentos-rojos: #e22432;
   --xipe-scrollbar: #ebe8e8;
   --xipe-texto: #1c1b1b;
   --xipe-fondo: #f2f0f0;
-  --xipe-sidebar: #707070;
+  --xipe-sidebar: #343434;
+  --xipe-texto-sidebar-fondo: #ffffff;
+  --xipe-input-texto: #f6f6f6;
 }
 
 body {
   line-height: 1.5;
   min-height: 100vh;
   font-family: "Poppins", sans-serif;
-  background-color: var(--xipe-acentos-rojos); /*900*/
+  background-color: var(--xipe-sidebar); /*900*/
   color: var(--xipe-texto);
   display: flex;
   padding-top: 3vw;
