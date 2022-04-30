@@ -2,10 +2,19 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>XipeCoins Management</title>
+  <title>Cuenta</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./sidebar.css">
+  <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/vendor/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/fonts/font-awesome/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/vendor/animate/animate.css">
+  <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/vendor/select2/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/vendor/perfect-scrollbar/perfect-scrollbar.css">
+  <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/css/util.css">
+  <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/css/tabla.css">
+
+  
 
 </head>
 <body>
@@ -15,7 +24,7 @@
 	<img src="https://drive.google.com/uc?export=view&id=17qRly_RNtO7moC4aSQkWyQjI5xKTv4Ft" id="logo">
 	<a href="#Perfil" class="sidebar-labels"> Profile</a>
 	<a href="#Feed" class="sidebar-labels"> Feed</a>
-	<a href="#XipeCoins" class="sidebar-labels"> XipeCoins</a>
+	<a href="../index.html" class="sidebar-labels"> XipeCoins</a>
 	<a href="#Calendar" class="sidebar-labels"> Calendar</a>
 </div>
 <div class="app">
@@ -26,23 +35,23 @@
 					<img src="https://pbs.twimg.com/profile_images/1463883159607681029/X7Gka3TC_400x400.jpg" />
 				</span>
 				<h1 class="logo-title">
-					<span>XipeCoins</span>
-					<span>XipeBank</span>
+					<SPAN STYLE="font-size:16px">XipeCoins</span>
+					<SPAN STYLE="font-size:16px">XipeBank</span>
 				</h1>
 			</div>
 		</div>
 		<div class="app-header-navigation">
 			<div class="tabs">
-				<a href="./index.html" class="active">
+				<a href="../index.html" class="active">
 					General
 				</a>
-				<a href="./transaction/trans.html" class="active">
+				<a href="../transaction/trans.html" class="active">
 					Transferencia
 				</a>
 				<!--<a href="#">
 					Cards
 				</a>-->
-				<a href="./Cuenta/cuenta.html">
+				<a href="./cuenta.html">
 					Cuenta  
 				</a>
 				<!--<a href="#">
@@ -71,10 +80,10 @@
 			</div>
 		</div>
 		<div class="app-header-mobile">
-				<ul class="dropdown-menu" role="menu">
-					<li><a href="./index.html">General</a></li>
-					<li><a href="./transaction/trans.html">Transferencia</a></li>
-					<li><a href="./Cuenta/cuenta.html">Cuenta</a></li>
+				<ul>
+					<li><a href="../index.html">General</a></li>
+					<li><a href="../transaction/trans.html">Transferencia</a></li>
+					<li><a href="./cuenta.html">Cuenta</a></li>
 				</ul>
 		<!--<button class="icon-button large">
 				<i class="ph-list"></i>
@@ -136,13 +145,13 @@
 						<div class="tile1-header">
 							<i></i>
 							<h3>
-								<span>XipeCoins</span>
+								<SPAN style="font-size: 16px;">XipeCoins</span>
 								<span>100</span>
 							</h3>
 							
 						</div>
 						<div>
-							<a href="./Cuenta/cuenta.html">
+							<a href="#">
 								<span class="icon-button">
 								<i class="ph-caret-right-bold"></i>
 							</span>
@@ -155,10 +164,10 @@
 					
 				</div>
 			</section>
-			<section class="service-section">
+			<!--<section class="service-section">
 				<h2>Convenios</h2>
 				<div class="service-section-header">
-					<!--<div class="search-field">
+					<div class="search-field">
 						<i class="ph-magnifying-glass"></i>
 						<input type="text" placeholder="Account number">
 					</div>
@@ -168,7 +177,7 @@
 							<option>Work</option>
 						</select>
 						<i class="ph-caret-down"></i>
-					</div>-->
+					</div>
 					<a href="./Convenios/index.html">
 					<button class="flat-button">
 						Search
@@ -232,9 +241,9 @@
 				<div class="service-section-footer">
 					<p>Los convenios pueden cambiar según disponibilidad</p>
 				</div>
-			</section>
+			</section>-->
 
-			<section class="transfer-section">
+			 <!--<section class="transfer-section">
 				<div class="transfer-section-header">
 					<h2>Últimas transferencias</h2>
 					<div class="filter-options">
@@ -242,11 +251,9 @@
 						<button class="icon-button">
 							<i class="ph-funnel"></i>
 						</button>
-						<a href = "./Cuenta/cuenta.html">
 						<button class="icon-button">
 							<i class="ph-plus"></i>
 						</button>
-					</a>
 					</div>
 				</div>
 				<div class="transfers">
@@ -315,9 +322,240 @@
 						<div class="transfer-number">
 							- $ 70
 						</div>
+					<div class="transfer">
+							<div class="transfer-logo">
+								<img src="https://assets.codepen.io/285131/warner-bros.svg" />
+							</div>
+							<dl class="transfer-details">
+								<div>
+									<dt>Warner Bros.</dt>
+									<dd>Cinema</dd>
+								</div>
+								<div>
+									<dt>2228</dt>
+									<dd>Last four digits</dd>
+								</div>
+								<div>
+									<dt>22 Oct. 21</dt>
+									<dd>Date payment</dd>
+								</div>
+							</dl>
+							<div class="transfer-number">
+								- $ 70
+							</div>
+					  	</div>
 					</div>
+					<div class="transfer">
+						<div class="transfer-logo">
+							<img src="https://assets.codepen.io/285131/warner-bros.svg" />
+						</div>
+						<dl class="transfer-details">
+							<div>
+								<dt>Warner Bros.</dt>
+								<dd>Cinema</dd>
+							</div>
+							<div>
+								<dt>2228</dt>
+								<dd>Last four digits</dd>
+							</div>
+							<div>
+								<dt>22 Oct. 21</dt>
+								<dd>Date payment</dd>
+							</div>
+						</dl>
+						<div class="transfer-number">
+							- $ 70
+						</div>
+					  </div>
 				</div>
+				</div>
+			</section>-->
+			<section class="transfer-section">
+			<div class="transfer-section-header">
+				<h3>Transferencias</h3>
+			</div>
 			</section>
+			<section class="transfer-section">
+				<div class="transfer-section-header">
+				<!--<h2>Últimas transferencias</h2>-->
+					<div class="table100 ver2 m-b-30">
+						<div class="table100-head">
+						<table>
+						<thead>
+						<tr class="row100 head">
+						<th class="cell100 column1">Sender</th>
+						<th class="cell100 column2">Receiver</th>
+						<th class="cell100 column3">Concept</th>
+						<th class="cell100 column4">Amount</th>
+						<th class="cell100 column5">Date</th>
+						
+						</tr>
+						</thead>
+						</table>
+						</div>
+						<div class="table100-body js-pscroll">
+						<table>
+						<tbody>
+						<tr class="row100 body">
+						<td class="cell100 column1">Like a butterfly</td>
+						<td class="cell100 column2">Boxing</td>
+						<td class="cell100 column3">9:00 AM - 11:00 AM</td>
+						<td class="cell100 column4">Aaron Chapman</td>
+						<td class="cell100 column5">10</td>
+
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Mind & Body</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+						<td class="cell100 column4">Adam Stewart</td>
+						<td class="cell100 column5">15</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Crit Cardio</td>
+						<td class="cell100 column2">Gym</td>
+						<td class="cell100 column3">9:00 AM - 10:00 AM</td>
+						<td class="cell100 column4">Aaron Chapman</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Wheel Pose Full Posture</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">7:00 AM - 8:30 AM</td>
+						<td class="cell100 column4">Donna Wilson</td>
+						<td class="cell100 column5">15</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Playful Dancer's Flow</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+						<td class="cell100 column4">Donna Wilson</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Zumba Dance</td>
+						<td class="cell100 column2">Dance</td>
+						<td class="cell100 column3">5:00 PM - 7:00 PM</td>
+						<td class="cell100 column4">Donna Wilson</td>
+						<td class="cell100 column5">20</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Cardio Blast</td>
+						<td class="cell100 column2">Gym</td>
+						<td class="cell100 column3">5:00 PM - 7:00 PM</td>
+						<td class="cell100 column4">Randy Porter</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Pilates Reformer</td>
+						<td class="cell100 column2">Gym</td>
+						<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+						<td class="cell100 column4">Randy Porter</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Supple Spine and Shoulders</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">6:30 AM - 8:00 AM</td>
+						<td class="cell100 column4">Randy Porter</td>
+						<td class="cell100 column5">15</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Yoga for Divas</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">9:00 AM - 11:00 AM</td>
+						<td class="cell100 column4">Donna Wilson</td>
+						<td class="cell100 column5">20</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Virtual Cycle</td>
+						<td class="cell100 column2">Gym</td>
+						<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+						<td class="cell100 column4">Randy Porter</td>
+						<td class="cell100 column5">20</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Like a butterfly</td>
+						<td class="cell100 column2">Boxing</td>
+						<td class="cell100 column3">9:00 AM - 11:00 AM</td>
+						<td class="cell100 column4">Aaron Chapman</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Mind & Body</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+						<td class="cell100 column4">Adam Stewart</td>
+						<td class="cell100 column5">15</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Crit Cardio</td>
+						<td class="cell100 column2">Gym</td>
+						<td class="cell100 column3">9:00 AM - 10:00 AM</td>
+						<td class="cell100 column4">Aaron Chapman</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Wheel Pose Full Posture</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">7:00 AM - 8:30 AM</td>
+						<td class="cell100 column4">Donna Wilson</td>
+						<td class="cell100 column5">15</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Playful Dancer's Flow</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+						<td class="cell100 column4">Donna Wilson</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Zumba Dance</td>
+						<td class="cell100 column2">Dance</td>
+						<td class="cell100 column3">5:00 PM - 7:00 PM</td>
+						<td class="cell100 column4">Donna Wilson</td>
+						<td class="cell100 column5">20</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Cardio Blast</td>
+						<td class="cell100 column2">Gym</td>
+						<td class="cell100 column3">5:00 PM - 7:00 PM</td>
+						<td class="cell100 column4">Randy Porter</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Pilates Reformer</td>
+						<td class="cell100 column2">Gym</td>
+						<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+						<td class="cell100 column4">Randy Porter</td>
+						<td class="cell100 column5">10</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Supple Spine and Shoulders</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">6:30 AM - 8:00 AM</td>
+						<td class="cell100 column4">Randy Porter</td>
+						<td class="cell100 column5">15</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Yoga for Divas</td>
+						<td class="cell100 column2">Yoga</td>
+						<td class="cell100 column3">9:00 AM - 11:00 AM</td>
+						<td class="cell100 column4">Donna Wilson</td>
+						<td class="cell100 column5">20</td>
+						</tr>
+						<tr class="row100 body">
+						<td class="cell100 column1">Virtual Cycle</td>
+						<td class="cell100 column2">Gym</td>
+						<td class="cell100 column3">8:00 AM - 9:00 AM</td>
+						<td class="cell100 column4">Randy Porter</td>
+						<td class="cell100 column5">20</td>
+						</tr>
+						</tbody>
+						</table>
+						</div>
+						</div>
+			</section> 
 		</div>
 		<!--<div class="app-body-sidebar">
 			<section class="payment-section">
