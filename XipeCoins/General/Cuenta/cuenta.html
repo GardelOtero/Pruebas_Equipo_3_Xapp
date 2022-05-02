@@ -13,7 +13,7 @@
   <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/vendor/perfect-scrollbar/perfect-scrollbar.css">
   <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/css/util.css">
   <link rel="stylesheet" type="text/css" href="./Tabla dinamica/Carpeta 2/css/tabla.css">
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
   
 
 </head>
@@ -139,7 +139,7 @@
 		</div>-->
 		<div class="app-body-main-content">
 			<section class="service-section">
-				<h2>Balance</h2>
+				<h3>Balance</h3>
 				<div class="tiles1">
 					<article class ="tile1">
 						<div class="tile1-header">
@@ -164,6 +164,39 @@
 					
 				</div>
 			</section>
+			<section class="transfer-section">
+				<div class="transfer-section-header">
+					<h3>Ultimos Movimientos</h3>
+				</div>
+				</section>
+					<canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+					<script>
+					var xValues = [50,60,70,80,90,100,110,120,130,140,150];
+					var yValues = [7,8,8,9,9,9,10,11,14,14,15];
+
+					new Chart("myChart", {
+					type: "line",
+					data: {
+						labels: xValues,
+						datasets: [{
+						fill: false,
+						lineTension: 0,
+						backgroundColor: "rgba(0,0,255,1.0)",
+						borderColor: "rgba(0,0,255,0.1)",
+						data: yValues
+						}]
+					},
+					options: {
+						legend: {display: false},
+						scales: {
+						yAxes: [{ticks: {min: 6, max:16}}],
+						}
+					}
+					});
+					</script>
+
+				</section>
 			<!--<section class="service-section">
 				<h2>Convenios</h2>
 				<div class="service-section-header">
